@@ -18,7 +18,7 @@ public class DataService {
         List<NameFrequency> frequencies = new ArrayList<>();
 
         try{
-            InputStream is = getClass().getClassLoader().getResourceAsStream("test-data.xml");
+            InputStream is = getClass().getClassLoader().getResourceAsStream("java/org/example/harmadiktesztfeladat_korbandras/test-data.xml");
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document document = builder.parse(is);
