@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Data Result</title>
+</head>
+<body>
+<h1>Processed Data</h1>
+<div th:each="nf : ${frequencies}">
+    <p th:text="${nf.name} + ': ' + ${nf.frequency}"></p>
+</div>
+<a href="/">Go back</a>
+</body>
+</html>

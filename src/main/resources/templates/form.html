@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Data Query Form</title>
+</head>
+<body>
+<form action="/process" method="get">
+  Name starts with: <input type="text" name="startsWith"><br>
+  Sort order:
+  <select name="sortOrder">
+    <option value="nameAsc">Name Ascending</option>
+    <option value="nameDesc">Name Descending</option>
+    <option value="frequencyAsc">Frequency Ascending</option>
+    <option value="frequencyDesc">Frequency Descending</option>
+  </select><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
